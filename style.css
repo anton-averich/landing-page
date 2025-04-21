@@ -6,6 +6,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Hero Section */
@@ -51,7 +60,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem 5rem;
+    padding: 3rem 5rem;
     gap: 2rem;
 }
 
@@ -106,7 +115,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    padding: 2rem 0rem 5rem 0rem;
+    padding: 2rem 0rem 3rem 0rem;
     gap: 2rem;
 }
 
@@ -150,7 +159,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #e5e7eb;
-    padding: 10% 20%;
+    padding: 4rem 20%;
+    width: 100%;
 }
 
 .quote-text {
@@ -175,11 +185,11 @@ body {
     padding: 1.5rem 1.5rem;
     background-color: #3882f6;
     border-radius: 3px;
+    margin: 3rem auto;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* gap: 3rem; */
 }
 
 .call-to-action-content {
@@ -205,11 +215,27 @@ body {
     border: none;
     border-radius: 5px;
     padding: 0.5rem 2rem;
-    margin-top: 0.5rem;
     border: 1px solid #f9faf8;
 }
 
 .call-to-action-button:hover {
     background-color: #f9faf8;
     color: #3882f6;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #1f2937;
+}
+
+.footer-text {
+    font-size: 18px;
+    color: #f9faf8;
+    font-weight: lighter;
 }
