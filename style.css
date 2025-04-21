@@ -8,11 +8,9 @@ body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 main {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
@@ -65,17 +63,12 @@ main {
 }
 
 .hero-content-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
     width: 40%;
 }
 
 .hero-content-text-title {
     font-size: 48px;
     color: #f9faf8;
-    font-weight: bold;
 }
 
 .hero-content-text-description {
@@ -91,6 +84,7 @@ main {
     border-radius: 5px;
     padding: 0.5rem 2rem;
     margin-top: 0.5rem;
+    white-space: nowrap;
 }
 
 .hero-content-text-button:hover {
@@ -99,12 +93,9 @@ main {
 }
 
 .hero-content-image {
-    min-width: 400px;
-    min-height: 200px;
+    width: 40%;
+    aspect-ratio: 2/1;
     background-color: #e5e7eb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Info Section */
@@ -122,7 +113,6 @@ main {
 .info-title {
     font-size: 36px;
     color: #1f2937;
-    font-weight: bolder;
 }
 
 .info-items {
@@ -154,25 +144,20 @@ main {
 /* Quote Section */
 
 .quote {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: #e5e7eb;
     padding: 4rem 20%;
     width: 100%;
+    color: #1f2937;
 }
 
-.quote-text {
+.quote-text-text {
     font-size: 36px;
-    color: #1f2937;
     font-weight: lighter;
     font-style: italic;
 }
 
 .quote-text-author {
     font-size: 24px;
-    color: #1f2937;
     font-weight: bold;
     text-align: right;
     margin-top: 1rem;
@@ -184,12 +169,13 @@ main {
     width: 80%;
     padding: 1.5rem 1.5rem;
     background-color: #3882f6;
-    border-radius: 3px;
+    border-radius: 10px;
     margin: 3rem auto;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 1rem;
 }
 
 .call-to-action-content {
@@ -205,7 +191,7 @@ main {
 
 .call-to-action-description {
     font-size: 18px;
-    color: #f9faf8;
+    color: #e5e7eb;
     font-weight: lighter;
 }
 
@@ -216,6 +202,7 @@ main {
     border-radius: 5px;
     padding: 0.5rem 2rem;
     border: 1px solid #f9faf8;
+    white-space: nowrap;
 }
 
 .call-to-action-button:hover {
@@ -226,10 +213,6 @@ main {
 /* Footer */
 
 .footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 2rem 0;
     background-color: #1f2937;
 }
@@ -238,4 +221,5 @@ main {
     font-size: 18px;
     color: #f9faf8;
     font-weight: lighter;
+    text-align: center;
 }
