@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -40,6 +41,10 @@ body {
     font-weight: lighter;
 }
 
+.hero-header-links a:hover {
+    color: #3882f6;
+}
+
 /* Hero Content */
 
 .hero-content {
@@ -77,6 +82,11 @@ body {
     border-radius: 5px;
     padding: 0.5rem 2rem;
     margin-top: 0.5rem;
+}
+
+.hero-content-text-button:hover {
+    background-color: #f9faf8;
+    color: #3882f6;
 }
 
 .hero-content-image {
@@ -156,4 +166,50 @@ body {
     font-weight: bold;
     text-align: right;
     margin-top: 1rem;
+}
+
+/* Call to Action Section */
+
+.call-to-action {
+    width: 80%;
+    padding: 1.5rem 1.5rem;
+    background-color: #3882f6;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 3rem; */
+}
+
+.call-to-action-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.call-to-action-title {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.call-to-action-description {
+    font-size: 18px;
+    color: #f9faf8;
+    font-weight: lighter;
+}
+
+.call-to-action-button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    margin-top: 0.5rem;
+    border: 1px solid #f9faf8;
+}
+
+.call-to-action-button:hover {
+    background-color: #f9faf8;
+    color: #3882f6;
 }
