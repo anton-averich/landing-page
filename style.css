@@ -131,3 +131,29 @@ body {
     border: 3px solid #3882f6;
     border-radius: 10px;
 }
+
+/* Quote Section */
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e7eb;
+    padding: 10% 20%;
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote-text-author {
+    font-size: 24px;
+    color: #1f2937;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 1rem;
+}
